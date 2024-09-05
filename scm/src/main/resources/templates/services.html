@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is services page.</h1>
+   <hr/>
+   <div class="host-tag" th:replace ="~{base :: parent(~{::#main_content})}">
+    <section id="main_content">
+        <h2>Dynamic services passed to base parent</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iste 
+            ad veritatis placeat magnam explicabo fugit accusamus consequatur quam 
+             numquam praesentium temporibus adipisci, corrupti 
+        </p>
+        <button>Click on dynamic content</button>
+    </section>
+</div>
+</body>
+</html>

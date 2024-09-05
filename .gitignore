@@ -1,0 +1,6 @@
+/.vscode
+/node_modules
+/Notes
+/package-lock.json
+/package.json
+/tailwind.config.js
