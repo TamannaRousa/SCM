@@ -1,34 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" data-th-href="@{'/CSS/output.css'}">
-    <style>
-        .container{
-            margin: auto;
-            width: 50%;
-            padding: 30px;
-            background:#e2e2e2;
-        }
-    </style>
+    <title>Home Page</title>
 </head>
 <body>
-    
-    <div class="bg-gray-50 w-1/2 p-4 mx-auto mt-4 ">
-       <h1 class="task 2 font-bold">Welcome to home page</h1>
-       <p>youtube channel : <span th-text="${YoutubeChannel}"></span></p>
-        <!--thymleaf used [data-th-text]-->
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Odio, sunt, id, aliquid delectus mollitia voluptatem molestias culpa provident
-            itaque repudiandae ut maiores facere labore voluptate expedita repellat possimus 
-            dolore molestiae.
-        </p>
+    <div id="content">
+        <h1>Welcome to Home page</h1>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script>
+       console.log("Home page");
+    </script>
 </body>
 </html>
